@@ -1,0 +1,43 @@
+/* Add this CSS class name for box text which we want to keep hide on default state. */
+hide_content
+
+/* CSS for Card hover effect */
+selector .hide_content{
+    height: 0;
+    opacity: 0;
+    top:-110px;
+    transition: .2s ease-in-out;
+}
+
+selector{
+    height:200px;
+    cursor:pointer;
+    transition: .2s ease-in-out;
+}
+
+selector:hover {
+    height: auto;
+}
+
+selector:hover .hide_content{
+    height: auto;
+    opacity: 1;
+    top: 0;
+}
+
+/* CSS for responsive view */
+
+/* CSS for tablet */
+@media screen and (max-width: 768px) {
+    selector{
+    height:115px;
+    }
+}
+
+
+/* CSS for phone */
+@media screen and (max-width: 360px) {
+    selector{
+    height:175px;
+    }
+}
